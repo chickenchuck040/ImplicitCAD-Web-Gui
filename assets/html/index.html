@@ -9,6 +9,9 @@
 	<!-- Split.js Sources -->
 	<script type="text/javascript" src="assets/lib/splitjs/split.min.js"></script>
 
+	<!-- Loading Spinner Source -->
+	<link rel="stylesheet" href="assets/lib/spinners.css">
+
 	<!-- Three.js Sources and Helper Files -->
 	<script type="text/javascript" src="assets/lib/threejs/three.js"></script>
 	<script type="text/javascript" src="assets/lib/threejs/STLLoader.js"></script>
@@ -28,11 +31,12 @@
 	<div id="editorDiv" class="split split-horizontal">
 		<div id="buttons">
 			<button id="renderBtn">Render</button>
+			<span id="loader"></span>
 		</div>
 		<div id="editor" class="content">
 		</div>
 	</div>
-	
+
 	<div id="viewerDiv" class="split split-horizontal">
 		<div id="viewer" class="content">
 		</div>

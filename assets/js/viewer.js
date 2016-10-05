@@ -119,6 +119,7 @@ var path;
 
 function startLoading(newPath){
     path = newPath
+    document.getElementById("loader").className = "loading dots"
     modelTimer = window.setInterval(loadModel, 1000);
     //alert("Loading " + path);
 }
@@ -135,6 +136,8 @@ function loadModel(){
             //alert("loaded");
 
             window.clearInterval(modelTimer);
+            
+            document.getElementById("loader").className = ""
 
             var shapeMaterial = new THREE.MeshLambertMaterial({
                 color: 0xCC0000
