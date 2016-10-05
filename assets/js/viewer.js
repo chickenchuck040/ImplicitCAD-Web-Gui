@@ -32,6 +32,7 @@ function control() {
     controls = new THREE.OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.dampingFactor = 0.25;
+    controls.keyPanSpeed = 0;
 }
 
 function lights() {
